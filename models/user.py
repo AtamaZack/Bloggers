@@ -12,19 +12,18 @@ class Users():
 class User(Users):
 
     def __init__(self,user_name,email,password,status):
-    Users.__init__(self,user_name,email,password,status):
-        self.status = 'user'
+        Users.__init__(self,user_name,email,password,status)
+        self.status = 'normal'
 
 class Moderators(Users):
 
     def __init__(self,user_name,email,password,status):
-    Users.__init__(self,user_name,email,password,status):
+        Users.__init__(self,user_name,email,password,status)
         self.status = 'moderator'
 
 class Admin(Users):
 
     def __init__(self,user_name,email,password,status):
-    Users.__init__(self,user_name,email,password,status):
+        Users.__init__(self,user_name,email,password,status)
         self.status = 'admin'
-
 
